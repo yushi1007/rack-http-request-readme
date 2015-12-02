@@ -117,3 +117,5 @@ class Application
     resp.finish
   end
 ```
+
+<a href='https://learn.co/lessons/rack-http-request-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
