@@ -13,7 +13,7 @@ An HTTP Request that our browser sends to the server contains two main sections 
 
 ## The Path
 
-The path that is requested is the resource that the client wants. Since your sever can contain a lot of functionality, the path signifies which specific part of your server it wants. If we were creating a simple shopping cart application, for example, we can think of a few different paths that are required:
+The path that is requested is the resource that the client wants. Since your server can contain a lot of functionality, the path signifies which specific part of your server it wants. If we were creating a simple shopping cart application, for example, we can think of a few different paths that are required:
 
 | /items | List all items available |
 |--------|--------------------------|
