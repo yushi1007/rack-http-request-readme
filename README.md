@@ -52,6 +52,7 @@ class Application
 
     resp.finish
   end
+end
 ```
 
 Now we put all of your items out. The problem though is that this will list all of your items *no matter what path you put in*. Give it a try. Create your Rack file with the above code. Type `localhost:9292/items`, `localhost:9292/cart`, `localhost:9292/flatiron/is/awesome`. All of those URLs work since we're not filtering for path. In other words, no matter what the request is, we send the same response. Let's filter so that this only works for the `/items` path using the `#path` method of our `Rack::Request` object:
@@ -76,6 +77,7 @@ class Application
 
     resp.finish
   end
+end
 ```
 
 Great! With this we can now do different things depending on the path.
@@ -116,6 +118,9 @@ class Application
 
     resp.finish
   end
+end
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/rack-http-request-readme' title='The HTTP Request'>The HTTP Request</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rack-http-request-readme'>The HTTP Request</a> on Learn.co and start learning to code for free.</p>
