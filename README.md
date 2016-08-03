@@ -15,8 +15,9 @@ An HTTP Request that our browser sends to the server contains two main sections 
 
 The path that is requested is the resource that the client wants. Since your server can contain a lot of functionality, the path signifies which specific part of your server it wants. If we were creating a simple shopping cart application, for example, we can think of a few different paths that are required:
 
-| /items | List all items available |
+|  Path  |        Description       |
 |--------|--------------------------|
+| /items | List all items available |
 | /cart  | List items in cart       |
 
 How would we implement this in our Rack app? The path lives in the HTTP request, and to get to it we have to inspect the `env` part of our `#call` function. In the `env` variable is all of the information contained in the request. Thankfully, Rack has a great way of parsing all this information for us. It looks like this:
@@ -122,5 +123,3 @@ end
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/rack-http-request-readme' title='The HTTP Request'>The HTTP Request</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rack-http-request-readme'>The HTTP Request</a> on Learn.co and start learning to code for free.</p>
