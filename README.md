@@ -56,8 +56,7 @@ class Application
 end
 ```
 
-Now we put all of your items out. The problem though is that this will list all of your items *no matter what path you put in*. Give it a try. Create your Rack file with the above code. Type `localhost:9292/items`, `localhost:9292/cart`, `localhost:9292/flatiron/is/awesome`. All of those URLs work since we're not filtering for path. In other words, no matter what the request is, we send the same response. Let's filter so that this only works for the `/items` path using the `#path` method of our `Rack::Request` object:
-
+If you're on a local environment, you can take it a step further and customize the response based on which specific path you enter. For example, right now the code above will list all of your items *no matter what path you put in*. You can give it a try by using the code to create your Rack file. Type `localhost:9292/items`, `localhost:9292/cart`, `localhost:9292/flatiron/is/awesome`. All of those URLs work since we're not filtering for path. No matter what the request is, we end up sending the same response. Let's filter so that this only works for the `/items` path using the `#path` method of our `Rack::Request` object:
 
 ```ruby
 class Application
